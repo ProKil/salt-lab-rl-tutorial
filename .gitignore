@@ -1,0 +1,12 @@
+# unrelated research paper — not part of this tutorial
+sn-article-main-copy.tex
+*.tex
+
+# notebook/venv cruft
+*.bak
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+venv/
+*.pyc
+.DS_Store
