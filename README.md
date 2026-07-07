@@ -8,7 +8,8 @@ The LLM *is* the policy — it reads a board as text and writes back a move. Eve
 (advantages, log-probs, the clipped surrogate + KL loss, the training loop) is implemented
 by hand in a single notebook.
 
-- **Notebook:** [`agentic_rl_grpo_tictactoe.ipynb`](agentic_rl_grpo_tictactoe.ipynb) ([open in Colab](https://colab.research.google.com/github/ProKil/salt-lab-rl-tutorial/blob/main/agentic_rl_grpo_tictactoe.ipynb) — use a T4 GPU runtime)
+- **Notebook (fill-in-the-blank):** [`agentic_rl_grpo_tictactoe.ipynb`](agentic_rl_grpo_tictactoe.ipynb) ([open in Colab](https://colab.research.google.com/github/ProKil/salt-lab-rl-tutorial/blob/main/agentic_rl_grpo_tictactoe.ipynb) — use a T4 GPU runtime)
+- **Notebook (solutions):** [`agentic_rl_grpo_tictactoe_solutions.ipynb`](agentic_rl_grpo_tictactoe_solutions.ipynb) ([open in Colab](https://colab.research.google.com/github/ProKil/salt-lab-rl-tutorial/blob/main/agentic_rl_grpo_tictactoe_solutions.ipynb)) — every blank filled in; Run All passes end to end with no edits. Use it to verify correctness.
 - **Policy:** `Qwen/Qwen3.5-0.8B`, trained with **LoRA** adapters (the frozen base = reference policy for KL)
 - **Target:** vs the deterministic `weak_opponent`, win rate → ~1.0
 
