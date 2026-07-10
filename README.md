@@ -13,6 +13,17 @@ by hand in a single notebook.
 - **Policy:** `Qwen/Qwen3.5-0.8B`, trained with **LoRA** adapters (the frozen base = reference policy for KL)
 - **Target:** vs the deterministic `weak_opponent`, win rate → ~1.0
 
+## Warm-up: Policy Gradients from Scratch (CPU-only)
+
+A companion tutorial in the same fill-in-the-blank format: derive the policy gradient by
+hand, implement the exact gradient and the REINFORCE estimator in pure NumPy on a
+contextual bandit, verify both against finite differences, and train a policy with your
+own gradient. Every cell runs on CPU in seconds — do it before (or alongside) the GRPO
+notebook; it is exactly the machinery under the GRPO loop.
+
+- **Notebook (fill-in-the-blank):** [`rl_golf_policy_gradient.ipynb`](rl_golf_policy_gradient.ipynb) ([open in Colab](https://colab.research.google.com/github/ProKil/salt-lab-rl-tutorial/blob/main/rl_golf_policy_gradient.ipynb))
+- **Notebook (solutions):** [`rl_golf_policy_gradient_solutions.ipynb`](rl_golf_policy_gradient_solutions.ipynb) ([open in Colab](https://colab.research.google.com/github/ProKil/salt-lab-rl-tutorial/blob/main/rl_golf_policy_gradient_solutions.ipynb)) — every blank filled in; Run All passes end to end with no edits.
+
 ## Hardware
 
 A single GPU is enough (a free Colab T4 works; any AWS GPU instance — `g4dn`/`g5`/`p3` — is
